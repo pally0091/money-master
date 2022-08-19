@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-stone-500 text-4xl text-center mx-auto mt-10 p-15">Money Master ...</span></h1>
+
+    <section class="grid grid-cols-2 mx-auto w-10/12 mt-10 ">
+        <div class="mx-2 w-400 h-800">
+            <img class="w-full h-full" src="images/oip.jpg" alt="">
+        </div>
+        <div class="bg-yellow-100 mx-2 w-400 h-full">
+            <h2 class="text-xl mx-auto mt-5 text-center">Income</h2>
+            <div class="flex w-3/4 mx-auto ">
+                <div class="w-20">
+                    <p class="text-md ">income :</p>
+                </div>
+                <input id="income" class="w-10/12 mx-1 p-1" type="number" placeholder="0000">
+            </div>
+            <h2 class="text-xl mx-auto mt-5 text-center">Expences</h2>
+            <div class="flex w-3/4 mx-auto mt-2">
+                <div class="w-20">
+                    <p class="text-md ">Food :</p>
+                </div>
+                <input id="food" class="w-10/12 mx-1 p-1" type="number" placeholder="0000">
+            </div>
+            <div class="flex w-3/4 mx-auto mt-2">
+                <div class="w-20">
+                    <p class="text-md ">Rent :</p>
+                </div>
+                <input id="rent" class="w-10/12 mx-1 p-1" type="number" placeholder="0000">
+            </div>
+            <div class="flex w-3/4 mx-auto mt-2">
+                <div class="w-20">
+                    <p class="text-md ">Clothes :</p>
+                </div>
+                <input id="clothes" class="w-10/12 mx-1 p-1" type="number" placeholder="0000">
+            </div>
+            <div class="w-full px-40">
+                <button id="btn-calculate" class="w-full bg-red-200 text-center mt-5 hover:text-white hover:bg-red-400">Calculate</button>
+            </div>
+            <h2 class="text-xl mx-auto mt-5 text-center">Total Expences : <span id="expence">00</span></h2>
+            <h2 class="text-xl mx-auto mt-5 text-center">Balance : <span id="balance">00</span></h2>
+            <br>
+            <div class="flex w-10/12 mx-auto ">
+                <div class="w-20">
+                    <p class="text-md ">Save :</p>
+                </div>
+                <input id="percent" class="w-40 mx-1 p-1" type="number" placeholder="0000">
+                <p>%</p>
+                <button id="save" class="bg-green-200 px-2 py-1 mx-3 hover:bg-green-400 hover:text-white">Save</button>
+            </div>
+            <h2 class="text-xl mx-auto mt-5 text-center">Saving Ammount : <span id="saving">00</span></h2>
+            <h2 class="text-xl mx-auto mt-5 text-center">Remaining Balance : <span id="remain">00</span></h2>
+            <br>
+        </div>
+    </section>
+    <script src="calc.js"></script>
+</body>
+</html>
